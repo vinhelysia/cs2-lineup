@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS2 Grenade Lineups</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CS2 Grenade Lineups</h1>
+      <p>Master your utility game with precise grenade lineups</p>
+    </header>
+
+    <section class="map-selection">
+      <div class="map-header">
+        <h2>Select Map</h2>
+      </div>
+
+      <div class="map-grid" id="map-grid">
+      </div>
+    </section>
+
+    <!-- Side Selection -->
+    <section class="side-selection">
+      <div class="side-tabs">
+        <button class="side-btn active" data-side="t">
+          <i class="fas fa-user-ninja"></i> T-Side
+        </button>
+        <button class="side-btn" data-side="ct">
+          <i class="fas fa-shield-alt"></i> CT-Side
+        </button>
+      </div>
+    </section>
+
+    <section class="lineups">
+      <div class="tabs">
+        <button class="tab-btn active" data-type="smoke">
+          <i class="fas fa-bullseye"></i> Smokes
+        </button>
+        <button class="tab-btn" data-type="flash">
+          <i class="fas fa-bolt"></i> Flashes
+        </button>
+        <button class="tab-btn" data-type="molotov">
+          <i class="fas fa-fire"></i> Molotovs
+        </button>
+      </div>
+
+      <div class="tab-content active" id="smoke-content">
+        <div class="lineup-grid" id="smoke-grid">
+        </div>
+      </div>
+
+      <div class="tab-content" id="flash-content">
+        <div class="lineup-grid" id="flash-grid">
+        </div>
+      </div>
+
+      <div class="tab-content" id="molotov-content">
+        <div class="lineup-grid" id="molotov-grid">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="modal" id="lineup-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2 id="modal-title"></h2>
+      <div class="modal-body">
+        <div class="modal-media-container">
+          <!-- Media will be inserted here dynamically -->
+        </div>
+        <div class="modal-details">
+          <p><strong>Side:</strong> <span id="modal-side"></span></p>
+          <p><strong>Position:</strong> <span id="modal-position"></span></p>
+          <p><strong>Instructions:</strong> <span id="modal-description"></span></p>
+          <span id="modal-difficulty" class="badge"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Serenitea Pot Showcase</p>
+      <div class="social-links">
+        <a href="https://github.com/vinhelysia" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.youtube.com/@VinhElysia" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://tiktok.com/@vinhelysia1" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
