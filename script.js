@@ -15,13 +15,92 @@ const maps = [
 const lineups = {
   dust2: {
     t: {
-      smoke: [],
-      flash: [],
+      smoke: [
+        {
+          id: 1,
+          name: "B Window Smoke",
+          position: "Jump + Left Click Throw",
+          video: "https://www.youtube.com/embed/9TxFr9fhmRU?si=8ZahmrmEXoOnJEkm",
+          thumbnail: "https://img.youtube.com/vi/9TxFr9fhmRU/maxresdefault.jpg",
+          side: "t",
+          difficulty: "Easy",
+          description: "Outside Tunnel",
+        },
+        {
+          id: 2,
+          name: "B Doors",
+          position: "W + Jump + Left Click Throw",
+          video: "https://www.youtube.com/embed/SDpVqvt6CiE?si=XadGhTNsRS7NhOwl",
+          thumbnail: "https://img.youtube.com/vi/SDpVqvt6CiE/maxresdefault.jpg",
+          side: "t",
+          difficulty: "Medium",
+          description: "T Spawn",
+        },
+        {
+          id: 3,
+          name: "B Doors",
+          position: "Jump + Left Click Throw",
+          video: "https://www.youtube.com/embed/q3Z6fxZSpvI?si=xBsdZTZpmw6N5-ZL",
+          thumbnail: "https://img.youtube.com/vi/q3Z6fxZSpvI/maxresdefault.jpg",
+          side: "t",
+          difficulty: "Easy",
+          description: "Outside Tunnel",
+        },
+        {
+          id: 4,
+          name: "Xbox Smoke",
+          position: "Jump + Left Click Throw",
+          video: "https://www.youtube.com/embed/H5Kn0GYaYLk?si=5WYz4GBSGjzyzPem",
+          thumbnail: "https://img.youtube.com/vi/H5Kn0GYaYLk/maxresdefault.jpg",
+          side: "t",
+          difficulty: "Easy",
+          description: "T Spawn",
+        },
+      ],
+      flash: [
+      ],
       molotov: [],
     },
     ct: {
       smoke: [],
-      flash: [],
+      flash: [       
+        {
+        id: 1,
+        name: "A Long Pop Flash",
+        position: "Left Click Throw",
+        video: "https://www.youtube.com/embed/v-9a3iH24SY?si=9wrK7zJ6B9vIK_ht",
+        thumbnail: "https://img.youtube.com/vi/v-9a3iH24SY/maxresdefault.jpg",
+        side: "Both Sides",
+        difficulty: "Easy",
+        description: "CT Spawn",
+      },
+      {
+        id: 2,
+        name: "A Long Door Pop Flash",
+        position: "Left Click Throw",
+        video: "https://www.youtube.com/embed/NbvBa5YN6mA?si=ncSzjuavnn1ENwlr",
+        thumbnail: "https://img.youtube.com/vi/NbvBa5YN6mA/maxresdefault.jpg",
+        side: "CT-Side",
+        difficulty: "Easy",
+        description: "A Long",
+      }
+    ],
+      molotov: [],
+    },
+    both: {
+      smoke: [],
+      flash: [
+        {
+        id: 1,
+        name: "A Site Pop Flash",
+        position: "Left Click Throw",
+        video: "https://www.youtube.com/embed/nII0kP-9cM0?si=3TG38HfYEukt4DdI",
+        thumbnail: "https://img.youtube.com/vi/nII0kP-9cM0/maxresdefault.jpg",
+        side: "Both Sides",
+        difficulty: "Easy",
+        description: "A Long",
+      },
+    ],
       molotov: [],
     },
   },
@@ -35,7 +114,7 @@ const lineups = {
           video: "https://www.youtube.com/embed/inVWMcJgcg4?si=H7HVv2Ow_fn5ceiW",
           thumbnail: "https://img.youtube.com/vi/inVWMcJgcg4/maxresdefault.jpg",
           description: "T spawn",
-          difficulty: "Easy",
+          difficulty: "Easy", 
           side: "T-Side",
         },
         {
@@ -129,38 +208,73 @@ const lineups = {
       flash: [],
       molotov: [],
     },
+    both: {
+      smoke: [
+        {
+          id: 1,
+          name: "Mid Smoke (Universal)",
+          position: "Left Click Throw",
+          video: "https://www.youtube.com/embed/universalsmoke",
+          thumbnail: "https://img.youtube.com/vi/universalsmoke/maxresdefault.jpg",
+          description: "Works from multiple positions",
+          difficulty: "Medium",
+          side: "Both Sides",
+        },
+      ],
+      flash: [
+        {
+          id: 1,
+          name: "Site Flash (Universal)",
+          position: "Right Click Throw",
+          video: "https://www.youtube.com/embed/universalflash",
+          thumbnail: "https://img.youtube.com/vi/universalflash/maxresdefault.jpg",
+          description: "Effective from both sides",
+          difficulty: "Easy",
+          side: "Both Sides",
+        },
+      ],
+      molotov: [],
+    },
   },
   inferno: {
     t: { smoke: [], flash: [], molotov: [] },
     ct: { smoke: [], flash: [], molotov: [] },
+    both: { smoke: [], flash: [], molotov: [] },
   },
   cache: {
     t: { smoke: [], flash: [], molotov: [] },
     ct: { smoke: [], flash: [], molotov: [] },
+    both: { smoke: [], flash: [], molotov: [] },
   },
   overpass: {
     t: { smoke: [], flash: [], molotov: [] },
     ct: { smoke: [], flash: [], molotov: [] },
+    both: { smoke: [], flash: [], molotov: [] },
   },
   nuke: {
     t: { smoke: [], flash: [], molotov: [] },
     ct: { smoke: [], flash: [], molotov: [] },
+    both: { smoke: [], flash: [], molotov: [] },
   },
   train: {
     t: { smoke: [], flash: [], molotov: [] },
     ct: { smoke: [], flash: [], molotov: [] },
+    both: { smoke: [], flash: [], molotov: [] },
   },
   vertigo: {
     t: { smoke: [], flash: [], molotov: [] },
     ct: { smoke: [], flash: [], molotov: [] },
+    both: { smoke: [], flash: [], molotov: [] },
   },
   ancient: {
     t: { smoke: [], flash: [], molotov: [] },
     ct: { smoke: [], flash: [], molotov: [] },
+    both: { smoke: [], flash: [], molotov: [] },
   },
   anubis: {
     t: { smoke: [], flash: [], molotov: [] },
     ct: { smoke: [], flash: [], molotov: [] },
+    both: { smoke: [], flash: [], molotov: [] },
   },
 }
 
@@ -181,7 +295,7 @@ const modalDifficulty = document.getElementById("modal-difficulty")
 const closeModal = document.querySelector(".close-modal")
 
 // Current state
-let currentMap = "mirage"
+let currentMap = "dust2"
 let currentType = "smoke"
 let currentSide = "t"
 
@@ -226,14 +340,25 @@ function getYouTubeVideoId(url) {
   return match ? match[1] : null
 }
 
+// Get lineups for current side including both-sided lineups
+function getLineupsForCurrentSide(mapId, type) {
+  const mapData = lineups[mapId]
+  if (!mapData) return []
+
+  const sideLineups = mapData[currentSide]?.[type] || []
+  const bothLineups = mapData.both?.[type] || []
+
+  return [...sideLineups, ...bothLineups]
+}
+
 // Populate a specific lineup grid
 function populateLineupGrid(type, mapId) {
   const grid = document.getElementById(`${type}-grid`)
   grid.innerHTML = ""
 
-  const mapLineups = lineups[mapId]?.[currentSide]?.[type]
+  const allLineups = getLineupsForCurrentSide(mapId, type)
 
-  if (!mapLineups || mapLineups.length === 0) {
+  if (!allLineups || allLineups.length === 0) {
     grid.innerHTML = `
         <div class="no-lineups">
           No ${type} lineups available for ${maps.find((m) => m.id === mapId).name} (${currentSide.toUpperCase()}-Side)
@@ -242,7 +367,7 @@ function populateLineupGrid(type, mapId) {
     return
   }
 
-  mapLineups.forEach((lineup) => {
+  allLineups.forEach((lineup) => {
     const card = document.createElement("div")
     card.className = "lineup-card"
 
@@ -295,7 +420,7 @@ function getGrenadeIcon(type) {
     case "molotov":
       return '<img src="images/Nades/molotov.webp" alt="molotov" class="icon-img large" />'
     default:
-      return ''
+      return ""
   }
 }
 
@@ -401,8 +526,17 @@ function updateActiveSide() {
     } else {
       button.classList.remove("active")
     }
-    const imgName = button.dataset.side === "t" ? "T.webp" : "ct.webp"
-    button.innerHTML = `<img src="images/Side/${imgName}" alt="${button.dataset.side}" class="icon-img" /> ${button.dataset.side.toUpperCase()}-Side`
+    const imgName =
+      button.dataset.side === "t"
+        ? "T.webp"
+        : button.dataset.side === "ct"
+        ? "ct.webp"
+        : "any.96745b45.png"
+    const label =
+      button.dataset.side === "both"
+        ? "Both"
+        : `${button.dataset.side.toUpperCase()}-Side`
+    button.innerHTML = `<img src="images/Side/${imgName}" alt="${button.dataset.side}" class="icon-img" /> ${label}`
   })
 }
 
@@ -446,14 +580,15 @@ function updateTabIcons() {
   })
 }
 
-// Hide modal function
+// Hide modal function - PROPERLY STOPS VIDEOS
 function hideModal() {
   modal.style.display = "none"
   document.body.style.overflow = ""
-  // Stop any playing videos
-  const iframe = modal.querySelector("iframe")
-  if (iframe) {
-    iframe.src = iframe.src
+
+  // Completely remove and recreate media container to stop all videos
+  const modalMediaContainer = document.querySelector(".modal-media-container")
+  if (modalMediaContainer) {
+    modalMediaContainer.innerHTML = ""
   }
 }
 
