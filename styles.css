@@ -125,9 +125,9 @@ header p {
 
 .side-tabs {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
   background-color: #2d3748;
   border: 1px solid #4a5568;
@@ -233,6 +233,7 @@ header p {
   overflow: hidden;
   transition: all 0.2s ease;
   cursor: pointer;
+  position: relative;
 }
 
 .lineup-card:hover {
@@ -240,6 +241,21 @@ header p {
   transform: translateY(-2px);
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
   border-color: #5a6578;
+}
+
+/* Both sides indicator */
+.lineup-card[data-both-sides="true"]::before {
+  content: "BOTH";
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: linear-gradient(45deg, #3182ce, #805ad5);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  z-index: 10;
 }
 
 .lineup-header {
@@ -399,9 +415,6 @@ header p {
   z-index: 1000;
   overflow-y: auto;
   padding: 2rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .modal-content {
@@ -462,7 +475,7 @@ header p {
 .modal-media-container {
   flex: 2;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Ensure video starts right below the title */
   justify-content: center;
 }
 
